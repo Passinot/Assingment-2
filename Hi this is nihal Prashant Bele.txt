@@ -1,1 +1,31 @@
-Hi this is nihal Prashant Bele
+Hi this is nihal Prashant Belepackage ArrayExamples;
+
+import java.util.Scanner;
+
+public class CapitalizeInitial {
+	Scanner s=new Scanner(System.in);
+	
+	String str[]=new String[5];
+	void inputStrArr()
+	{
+		for(int i=0;i<5;i++)
+		{
+			System.out.println("enter 5 names");
+			str[i]=s.next();
+			
+		}
+		for(int i=0;i<5;i++)
+		{
+			str[i]=(str[i].substring(0, 1).toUpperCase())+str[i].substring(1);
+			System.out.print(str[i]+" ");
+		}
+		
+	}
+		
+
+	public static void main(String[] args) {
+		CapitalizeInitial c=new CapitalizeInitial();
+		c.inputStrArr();
+	}
+
+}
